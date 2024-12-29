@@ -1,0 +1,19 @@
+	#BSUB -n 20
+	#BSUB -W 00:30
+	#BSUB -o for.%J.out
+	#BSUB -e for.%J.err
+	#BSUB -R "span[hosts=1]"
+export OMP_NUM_THREADS=3
+./for 3 1026
+export OMP_NUM_THREADS=4
+./for 4 1026
+export OMP_NUM_THREADS=8
+./for 8 1026
+export OMP_NUM_THREADS=16
+./for 16 1026
+export OMP_NUM_THREADS=32
+./for 32 1026
+export OMP_NUM_THREADS=64
+./for 64 1026
+export OMP_NUM_THREADS=128
+./for 128 1026

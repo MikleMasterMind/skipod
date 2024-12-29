@@ -1,0 +1,10 @@
+	#BSUB -n 21
+	#BSUB -W 00:30
+	#BSUB -o optimized.%J.out
+	#BSUB -e optimized.%J.err
+./optimized 66;
+./optimized 130;
+./optimized 258;
+./optimized 514;
+./optimized 1026;
+./optimized 2050;

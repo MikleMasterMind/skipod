@@ -1,0 +1,14 @@
+	#BSUB -n 20
+	#BSUB -W 00:30
+	#BSUB -o mpi.%J.out
+	#BSUB -e mpi.%J.err
+	#BSUB -R "span[hosts=1]"
+mpirun -np 1 --oversubscribe ./mpi 1026
+mpirun -np 2 --oversubscribe ./mpi 1026
+mpirun -np 3 --oversubscribe ./mpi 1026
+mpirun -np 4 --oversubscribe ./mpi 1026
+mpirun -np 8 --oversubscribe ./mpi 1026
+mpirun -np 16 --oversubscribe ./mpi 1026
+mpirun -np 32 --oversubscribe ./mpi 1026
+mpirun -np 64 --oversubscribe ./mpi 1026
+mpirun -np 128 --oversubscribe ./mpi 1026

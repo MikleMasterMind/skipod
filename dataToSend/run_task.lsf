@@ -1,0 +1,95 @@
+	#BSUB -n 20
+	#BSUB -W 00:30
+	#BSUB -o task.%J.out
+	#BSUB -e task.%J.err
+	#BSUB -R "span[hosts=1]"
+export OMP_NUM_THREADS=1
+./task 1 66
+export OMP_NUM_THREADS=2  
+./task 2 66
+export OMP_NUM_THREADS=3  
+./task 3 66
+export OMP_NUM_THREADS=4  
+./task 4 66
+export OMP_NUM_THREADS=8  
+./task 8 66
+export OMP_NUM_THREADS=16 
+./task 16 66
+export OMP_NUM_THREADS=32 
+./task 32 66
+export OMP_NUM_THREADS=64 
+./task 64 66
+export OMP_NUM_THREADS=128
+./task 128 66
+export OMP_NUM_THREADS=1  
+./task 1 130
+export OMP_NUM_THREADS=2
+./task 2 130
+export OMP_NUM_THREADS=3
+./task 3 130
+export OMP_NUM_THREADS=4
+./task 4 130
+export OMP_NUM_THREADS=8
+./task 8 130
+export OMP_NUM_THREADS=16
+./task 16 130
+export OMP_NUM_THREADS=32
+./task 32 130
+export OMP_NUM_THREADS=64
+./task 64 130
+export OMP_NUM_THREADS=128
+./task 128 130
+export OMP_NUM_THREADS=1
+./task 1 258
+export OMP_NUM_THREADS=2
+./task 2 258
+export OMP_NUM_THREADS=3
+./task 3 258
+export OMP_NUM_THREADS=4
+./task 4 258
+export OMP_NUM_THREADS=8
+./task 8 258
+export OMP_NUM_THREADS=16
+./task 16 258
+export OMP_NUM_THREADS=32
+./task 32 258
+export OMP_NUM_THREADS=64
+./task 64 258
+export OMP_NUM_THREADS=128
+./task 128 258
+export OMP_NUM_THREADS=1
+./task 1 514
+export OMP_NUM_THREADS=2
+./task 2 514
+export OMP_NUM_THREADS=3
+./task 3 514
+export OMP_NUM_THREADS=4
+./task 4 514
+export OMP_NUM_THREADS=8
+./task 8 514
+export OMP_NUM_THREADS=16
+./task 16 514
+export OMP_NUM_THREADS=32
+./task 32 514
+export OMP_NUM_THREADS=64
+./task 64 514
+export OMP_NUM_THREADS=128
+./task 128 514
+export OMP_NUM_THREADS=1
+./task 1 1026
+export OMP_NUM_THREADS=2
+./task 2 1026
+export OMP_NUM_THREADS=3
+./task 3 1026
+export OMP_NUM_THREADS=4
+./task 4 1026
+export OMP_NUM_THREADS=8
+./task 8 1026
+export OMP_NUM_THREADS=16
+./task 16 1026
+export OMP_NUM_THREADS=32
+./task 32 1026
+export OMP_NUM_THREADS=64
+./task 64 1026
+export OMP_NUM_THREADS=128
+./task 128 1026
