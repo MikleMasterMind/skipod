@@ -28,7 +28,7 @@ int main(int an, char **as)
 		eps = 0.;
 		relax();
 		resid();
-		//printf( "it=%4i   eps=%f\n", it,eps);
+		printf( "it=%4i   eps=%f\n", it,eps);
 		if (eps < maxeps) break;
 	}
 	verify();
